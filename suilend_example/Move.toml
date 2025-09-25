@@ -1,0 +1,11 @@
+[package]
+name = "suilend_example"
+edition = "2024.beta" # edition = "legacy" to use legacy (pre-2024) Move
+
+[dependencies]
+
+[addresses]
+suilend_example = "0x0"
+
+[dev-dependencies]
+Suilend = { git = "https://github.com/Typus-Lab/suilend", subdir = "contracts/suilend", rev = "devel" }
