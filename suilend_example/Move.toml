@@ -1,11 +1,15 @@
 [package]
 name = "suilend_example"
-edition = "2024.beta" # edition = "legacy" to use legacy (pre-2024) Move
-
-[dependencies]
+edition = "2024.alpha" # edition = "legacy" to use legacy (pre-2024) Move
 
 [addresses]
 suilend_example = "0x0"
+
+[dependencies.Pyth]
+git = "https://github.com/Typus-Lab/pyth-crosschain.git"
+subdir = "target_chains/sui/contracts"
+rev = "sui-contract-mainnet"
+override = true
 
 [dev-dependencies]
 Suilend = { git = "https://github.com/Typus-Lab/suilend", subdir = "contracts/suilend", rev = "devel" }
